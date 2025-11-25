@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.toll-app</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>GUNICORN_PATH_PLACEHOLDER</string>
+        <string>--config</string>
+        <string>WORKING_DIR_PLACEHOLDER/gunicorn_config.py</string>
+        <string>app:app</string>
+    </array>
+    
+    <key>WorkingDirectory</key>
+    <string>WORKING_DIR_PLACEHOLDER</string>
+    
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <key>KeepAlive</key>
+    <true/>
+    
+    <key>StandardOutPath</key>
+    <string>LOGS_DIR_PLACEHOLDER/gunicorn-stdout.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>LOGS_DIR_PLACEHOLDER/gunicorn-stderr.log</string>
+    
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>PYTHONPATH</key>
+        <string>WORKING_DIR_PLACEHOLDER</string>
+    </dict>
+</dict>
+</plist>
+

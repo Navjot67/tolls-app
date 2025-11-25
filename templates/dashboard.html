@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-ZPass NY Toll Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>E-ZPass NY Toll Dashboard</h1>
+            <p class="subtitle">Monitor your toll balance and bill numbers</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Saved Accounts Management -->
+            <div class="card input-card" id="savedAccountsCard">
+                <div class="card-header" style="margin-bottom: 15px;">
+                    <h2 style="margin: 0;">💾 Saved Accounts (Auto-Fetch)</h2>
+                    <p style="margin: 5px 0 0 0; color: var(--text-secondary); font-size: 0.9rem;">
+                        These accounts will be checked automatically every 3 hours
+                    </p>
+                </div>
+                <div id="savedAccountsContainer">
+                    <!-- Saved accounts will be loaded here -->
+                </div>
+                <div class="form-group" style="margin-top: 15px;">
+                    <button type="button" class="btn-secondary" id="addSavedAccountBtn">
+                        ➕ Add NY Account
+                    </button>
+                    <button type="button" class="btn-secondary" id="addNJAccountBtn" style="margin-left: 10px;">
+                        ➕ Add NJ Violation
+                    </button>
+                    <button type="button" class="btn-secondary" id="loadSavedAccountsBtn" style="margin-left: 10px;">
+                        🔄 Refresh List
+                    </button>
+                </div>
+            </div>
+
+            <!-- Input Form -->
+            <div class="card input-card">
+                <h2>Multi-User Account Management</h2>
+                <div class="toll-form">
+                    <div id="usersContainer">
+                        <!-- User accounts will be added here -->
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn-secondary" id="addUserBtn">
+                            ➕ Add Another Account
+                        </button>
+                    </div>
+                    <button type="button" class="btn-primary" id="fetchBtn">
+                        <span class="btn-text">Fetch All Accounts</span>
+                        <span class="btn-loader" style="display: none;">⏳ Processing...</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results Dashboard -->
+            <div id="resultsSection" class="results-section" style="display: none;">
+                <!-- Balance Due Card -->
+                <div class="card balance-card">
+                    <div class="card-header">
+                        <h3>Balance Due</h3>
+                        <span class="card-icon">💰</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="balance-amount" id="balanceDueAmount">$0.00</div>
+                        <div class="balance-label">This is what you owe to E-ZPass</div>
+                    </div>
+                </div>
+
+                <!-- Account Info Card -->
+                <div class="card info-card">
+                    <div class="card-header">
+                        <h3>Account Information</h3>
+                        <span class="card-icon">📋</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="info-item">
+                            <span class="info-label">Account Number:</span>
+                            <span class="info-value" id="accountNumberDisplay">--</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Plate Number:</span>
+                            <span class="info-value" id="plateNumberDisplay">--</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Last Updated:</span>
+                            <span class="info-value" id="lastUpdated">--</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bill Number Card -->
+                <div class="card tolls-card">
+                    <div class="card-header">
+                        <h3>Bill Number</h3>
+                        <span class="card-icon">🧾</span>
+                    </div>
+                    <div class="card-content">
+                        <div id="tollsList" class="tolls-list"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Error Message -->
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+            <!-- Loading Overlay -->
+            <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+                <div class="spinner"></div>
+                <p>Fetching toll information...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='saved-accounts.js') }}"></script>
+    <script src="{{ url_for('static', filename='multi-user.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

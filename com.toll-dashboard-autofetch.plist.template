@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.toll-dashboard-autofetch</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>INSTALL_DIR_PLACEHOLDER/venv/bin/python3</string>
+        <string>INSTALL_DIR_PLACEHOLDER/auto_fetch.py</string>
+    </array>
+    
+    <key>StartInterval</key>
+    <integer>10800</integer>
+    
+    <key>RunAtLoad</key>
+    <false/>
+    
+    <key>StandardOutPath</key>
+    <string>INSTALL_DIR_PLACEHOLDER/launchd_stdout.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>INSTALL_DIR_PLACEHOLDER/launchd_stderr.log</string>
+    
+    <key>WorkingDirectory</key>
+    <string>INSTALL_DIR_PLACEHOLDER</string>
+    
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+</dict>
+</plist>
+
+
+
+

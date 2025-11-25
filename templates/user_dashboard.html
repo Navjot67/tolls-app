@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-ZPass Account</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/user_dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Login/Signup Section -->
+        <div id="authSection" class="auth-section">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>E-ZPass Account Portal</h1>
+                    <p class="subtitle">Sign in to view your toll balance and account information</p>
+                </div>
+
+                <!-- Login Form -->
+                <div id="loginForm" class="auth-form">
+                    <h2>Sign In</h2>
+                    <form id="loginFormElement">
+                        <div class="form-group">
+                            <label for="loginEmail">Email Address</label>
+                            <input type="email" id="loginEmail" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" name="password" required placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="btn-primary" id="loginBtn">
+                            <span class="btn-text">Sign In</span>
+                            <span class="btn-loader" style="display: none;">⏳ Signing in...</span>
+                        </button>
+                    </form>
+                    <p class="auth-switch">
+                        Don't have an account? <a href="#" id="showSignup">Sign up</a>
+                    </p>
+                </div>
+
+                <!-- Signup Form -->
+                <div id="signupForm" class="auth-form" style="display: none;">
+                    <h2>Create Account</h2>
+                    <form id="signupFormElement">
+                        <div class="form-group">
+                            <label for="signupName">Name (Optional)</label>
+                            <input type="text" id="signupName" name="name" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupEmail">Email Address</label>
+                            <input type="email" id="signupEmail" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPassword">Password</label>
+                            <input type="password" id="signupPassword" name="password" required placeholder="At least 6 characters" minlength="6">
+                        </div>
+                        <button type="submit" class="btn-primary" id="signupBtn">
+                            <span class="btn-text">Create Account</span>
+                            <span class="btn-loader" style="display: none;">⏳ Creating account...</span>
+                        </button>
+                    </form>
+                    <p class="auth-switch">
+                        Already have an account? <a href="#" id="showLogin">Sign in</a>
+                    </p>
+                </div>
+
+                <!-- OTP Verification Form -->
+                <div id="otpForm" class="auth-form" style="display: none;">
+                    <h2>Verify Your Email</h2>
+                    <p class="otp-instruction">
+                        We've sent a 6-digit verification code to <strong id="otpEmailDisplay"></strong>
+                    </p>
+                    <form id="otpFormElement">
+                        <div class="form-group">
+                            <label for="otpCode">Verification Code</label>
+                            <input type="text" id="otpCode" name="otp" required placeholder="000000" maxlength="6" pattern="[0-9]{6}">
+                            <small class="form-hint">Enter the 6-digit code from your email</small>
+                        </div>
+                        <button type="submit" class="btn-primary" id="verifyOtpBtn">
+                            <span class="btn-text">Verify Email</span>
+                            <span class="btn-loader" style="display: none;">⏳ Verifying...</span>
+                        </button>
+                    </form>
+                    <p class="auth-switch">
+                        Didn't receive the code? <a href="#" id="resendOtpLink">Resend OTP</a>
+                    </p>
+                    <p class="auth-switch">
+                        <a href="#" id="backToSignup">Back to signup</a>
+                    </p>
+                </div>
+
+                <!-- Error/Success Messages -->
+                <div id="authMessage" class="auth-message" style="display: none;"></div>
+            </div>
+        </div>
+
+        <!-- User Dashboard Section -->
+        <div id="dashboardSection" class="dashboard-section" style="display: none;">
+            <header class="header">
+                <div class="header-content">
+                    <div>
+                        <h1>My E-ZPass Account</h1>
+                        <p class="subtitle" id="userWelcome">Welcome back!</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn-secondary" id="refreshBtn">
+                            <span class="btn-text">🔄 Refresh</span>
+                        </button>
+                        <button class="btn-secondary" id="logoutBtn">
+                            <span class="btn-text">Sign Out</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <!-- Loading State -->
+                <div id="loadingState" class="loading-state">
+                    <div class="spinner"></div>
+                    <p>Loading your account data...</p>
+                </div>
+
+                <!-- Accounts Display -->
+                <div id="accountsDisplay" class="accounts-display" style="display: none;">
+                    <div id="accountsList" class="accounts-list">
+                        <!-- Accounts will be dynamically inserted here -->
+                    </div>
+
+                    <!-- No Accounts Message -->
+                    <div id="noAccountsMessage" class="no-accounts" style="display: none;">
+                        <div class="no-accounts-icon">📭</div>
+                        <h3>No Accounts Found</h3>
+                        <p>We couldn't find any E-ZPass accounts linked to your email address.</p>
+                        <p class="help-text">If you've sent an email with your account information, it will be automatically linked to your account.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/user_dashboard.js"></script>
+</body>
+</html>
+
