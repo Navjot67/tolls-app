@@ -4,20 +4,19 @@ __pycache__/
 *$py.class
 *.so
 .Python
-venv/
 env/
+venv/
 ENV/
 .venv
 
-# Environment variables
-.env
-.env.local
-.env.*.local
+# Flask
+instance/
+.webassets-cache
 
-# Logs
-*.log
-logs/
-*.log.*
+# Selenium/Playwright
+debug_*.png
+error_screenshot.png
+live_demo_*.png
 
 # IDE
 .vscode/
@@ -28,20 +27,10 @@ logs/
 
 # OS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
-# App specific
-accounts_config.json
-users.json
-*.db
-*.sqlite
+# Production
+*.sock
+.env
+.env.local
 
-# Temporary files
-*.tmp
-*.bak
-*.swp
