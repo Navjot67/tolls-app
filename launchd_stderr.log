@@ -1,0 +1,109 @@
+/Users/ghuman/tolls/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/ghuman/tolls/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/ghuman/tolls/automation_selenium_nj.py", line 330, in _fetch_violation_info
+    violation_input.click()
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 394, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+0   chromedriver                        0x000000010075eecc cxxbridge1$str$ptr + 2941512
+1   chromedriver                        0x0000000100756b88 cxxbridge1$str$ptr + 2907908
+2   chromedriver                        0x000000010026e114 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73608
+3   chromedriver                        0x00000001002b68a8 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 370460
+4   chromedriver                        0x00000001002aba78 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 325868
+5   chromedriver                        0x00000001002ab504 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 324472
+6   chromedriver                        0x00000001002f6d54 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633800
+7   chromedriver                        0x00000001002a9ef0 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 318820
+8   chromedriver                        0x00000001007220c8 cxxbridge1$str$ptr + 2692164
+9   chromedriver                        0x00000001007258dc cxxbridge1$str$ptr + 2706520
+10  chromedriver                        0x000000010070284c cxxbridge1$str$ptr + 2563016
+11  chromedriver                        0x00000001007261b4 cxxbridge1$str$ptr + 2708784
+12  chromedriver                        0x00000001006f40f4 cxxbridge1$str$ptr + 2503792
+13  chromedriver                        0x0000000100745498 cxxbridge1$str$ptr + 2836500
+14  chromedriver                        0x000000010074561c cxxbridge1$str$ptr + 2836888
+15  chromedriver                        0x00000001007567d8 cxxbridge1$str$ptr + 2906964
+16  libsystem_pthread.dylib             0x000000019d284c08 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019d27fba8 thread_start + 8
+
+Traceback (most recent call last):
+  File "/Users/ghuman/tolls/automation_selenium_nj.py", line 364, in _fetch_violation_info
+    plate_input.click()
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 394, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+0   chromedriver                        0x000000010075eecc cxxbridge1$str$ptr + 2941512
+1   chromedriver                        0x0000000100756b88 cxxbridge1$str$ptr + 2907908
+2   chromedriver                        0x000000010026e114 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73608
+3   chromedriver                        0x00000001002b68a8 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 370460
+4   chromedriver                        0x00000001002aba78 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 325868
+5   chromedriver                        0x00000001002ab504 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 324472
+6   chromedriver                        0x00000001002f6d54 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633800
+7   chromedriver                        0x00000001002a9ef0 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 318820
+8   chromedriver                        0x00000001007220c8 cxxbridge1$str$ptr + 2692164
+9   chromedriver                        0x00000001007258dc cxxbridge1$str$ptr + 2706520
+10  chromedriver                        0x000000010070284c cxxbridge1$str$ptr + 2563016
+11  chromedriver                        0x00000001007261b4 cxxbridge1$str$ptr + 2708784
+12  chromedriver                        0x00000001006f40f4 cxxbridge1$str$ptr + 2503792
+13  chromedriver                        0x0000000100745498 cxxbridge1$str$ptr + 2836500
+14  chromedriver                        0x000000010074561c cxxbridge1$str$ptr + 2836888
+15  chromedriver                        0x00000001007567d8 cxxbridge1$str$ptr + 2906964
+16  libsystem_pthread.dylib             0x000000019d284c08 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019d27fba8 thread_start + 8
+
+Traceback (most recent call last):
+  File "/Users/ghuman/tolls/automation_selenium_nj.py", line 457, in _fetch_violation_info
+    plate_input.send_keys(Keys.RETURN)
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 230, in send_keys
+    self._execute(
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 394, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ghuman/tolls/venv/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+0   chromedriver                        0x000000010075eecc cxxbridge1$str$ptr + 2941512
+1   chromedriver                        0x0000000100756b88 cxxbridge1$str$ptr + 2907908
+2   chromedriver                        0x000000010026e114 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73608
+3   chromedriver                        0x00000001002b0778 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 345580
+4   chromedriver                        0x00000001002af15c _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 339920
+5   chromedriver                        0x00000001002ab504 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 324472
+6   chromedriver                        0x00000001002f6d54 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633800
+7   chromedriver                        0x00000001002a9ef0 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 318820
+8   chromedriver                        0x00000001007220c8 cxxbridge1$str$ptr + 2692164
+9   chromedriver                        0x00000001007258dc cxxbridge1$str$ptr + 2706520
+10  chromedriver                        0x000000010070284c cxxbridge1$str$ptr + 2563016
+11  chromedriver                        0x00000001007261b4 cxxbridge1$str$ptr + 2708784
+12  chromedriver                        0x00000001006f40f4 cxxbridge1$str$ptr + 2503792
+13  chromedriver                        0x0000000100745498 cxxbridge1$str$ptr + 2836500
+14  chromedriver                        0x000000010074561c cxxbridge1$str$ptr + 2836888
+15  chromedriver                        0x00000001007567d8 cxxbridge1$str$ptr + 2906964
+16  libsystem_pthread.dylib             0x000000019d284c08 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019d27fba8 thread_start + 8
+
+/Users/ghuman/tolls/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/ghuman/tolls/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/ghuman/tolls/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(

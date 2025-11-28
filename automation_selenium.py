@@ -58,45 +58,73 @@ class EZPassAutomation:
             import os
             driver_path = ChromeDriverManager().install()
             
-            # Ensure we're using the actual chromedriver executable
-            # ChromeDriverManager sometimes returns a directory instead of the executable path
-            if os.path.isdir(driver_path):
-                # If path is a directory, find the chromedriver executable
-                # Look for files named exactly 'chromedriver' (not .chromedriver or other variations)
-                chromedriver_candidates = []
-                for root, dirs, files in os.walk(driver_path):
-                    for file in files:
-                        # Only match exact filename 'chromedriver', not files containing 'chromedriver'
-                        if file == 'chromedriver':
-                            test_path = os.path.join(root, file)
-                            # Check if it's executable and large enough (> 1MB indicates binary, not text)
-                            if os.access(test_path, os.X_OK) and os.path.getsize(test_path) > 1000000:
-                                chromedriver_candidates.append((test_path, os.path.getsize(test_path)))
-                
-                # If we found candidates, use the largest one (should be the actual binary)
-                if chromedriver_candidates:
-                    # Sort by size descending and take the largest (should be ~15MB)
-                    chromedriver_candidates.sort(key=lambda x: x[1], reverse=True)
-                    driver_path = chromedriver_candidates[0][0]
-                    print(f"Found chromedriver executable at: {driver_path} (size: {chromedriver_candidates[0][1] / 1024 / 1024:.1f}MB)")
-                else:
-                    raise Exception(f"No valid chromedriver executable found in directory: {driver_path}")
-            elif not os.path.isfile(driver_path):
-                raise Exception(f"ChromeDriver path is not a file or directory: {driver_path}")
+            # ChromeDriverManager sometimes returns the wrong file (e.g., THIRD_PARTY_NOTICES.chromedriver)
+            # We need to find the actual chromedriver executable
+            original_path = driver_path
+            valid_driver_found = False
             
-            # Final validation - ensure it's actually a binary executable
+            # Check if the returned path is actually the chromedriver executable
+            if os.path.isfile(driver_path):
+                file_size = os.path.getsize(driver_path)
+                # Real chromedriver binary should be > 10MB (typically ~15MB)
+                # Text files like THIRD_PARTY_NOTICES.chromedriver are < 1MB
+                if file_size >= 10000000:  # >= 10MB - this looks like the real executable
+                    valid_driver_found = True
+                    print(f"✅ ChromeDriverManager returned valid executable: {driver_path} ({file_size / 1024 / 1024:.1f}MB)")
+                else:
+                    # Too small - likely wrong file
+                    print(f"⚠️  ChromeDriverManager returned suspicious file: {driver_path} ({file_size / 1024 / 1024:.1f}MB)")
+            
+            # If we don't have a valid driver_path yet, search for it
+            if not valid_driver_found:
+                # Search directory (either the directory itself or parent of the wrong file)
+                if os.path.isdir(original_path):
+                    search_dir = original_path
+                elif os.path.isfile(original_path):
+                    search_dir = os.path.dirname(original_path)
+                else:
+                    # Fallback: search common locations
+                    search_dir = os.path.dirname(os.path.dirname(original_path)) if os.path.dirname(original_path) else "/Users/ghuman/.wdm/drivers/chromedriver"
+                
+                print(f"🔍 Searching for chromedriver executable in: {search_dir}")
+                chromedriver_found = False
+                
+                for root, dirs, files in os.walk(search_dir):
+                    for file in files:
+                        # Match EXACT filename 'chromedriver' (case-sensitive)
+                        # Ignore files like 'THIRD_PARTY_NOTICES.chromedriver'
+                        if file == 'chromedriver':
+                            candidate_path = os.path.join(root, file)
+                            # Verify it's executable and has reasonable size
+                            if os.path.isfile(candidate_path) and os.access(candidate_path, os.X_OK):
+                                file_size = os.path.getsize(candidate_path)
+                                # Real chromedriver binary should be > 10MB (typically ~15MB)
+                                if file_size >= 10000000:  # >= 10MB
+                                    driver_path = candidate_path
+                                    chromedriver_found = True
+                                    valid_driver_found = True
+                                    print(f"✅ Found chromedriver executable: {driver_path} ({file_size / 1024 / 1024:.1f}MB)")
+                                    break
+                    if chromedriver_found:
+                        break
+                
+                if not chromedriver_found:
+                    raise Exception(f"Could not find valid chromedriver executable in: {search_dir}")
+            
+            # Final validation
             if not os.path.isfile(driver_path):
-                raise Exception(f"ChromeDriver not found at: {driver_path}")
+                raise Exception(f"ChromeDriver executable not found at: {driver_path}")
             
             if not os.access(driver_path, os.X_OK):
                 raise Exception(f"ChromeDriver is not executable: {driver_path}")
             
-            # Check file size one more time to avoid text files
+            # Verify it's a real binary (should be > 10MB)
             file_size = os.path.getsize(driver_path)
-            if file_size < 1000000:  # Less than 1MB is suspicious
+            if file_size < 10000000:  # Less than 10MB is suspicious
                 raise Exception(f"ChromeDriver file seems too small ({file_size} bytes) - might be a text file, not binary: {driver_path}")
             
-            print(f"Using ChromeDriver at: {driver_path} (size: {file_size / 1024 / 1024:.1f}MB)")
+            print(f"🚀 Using ChromeDriver: {driver_path} ({file_size / 1024 / 1024:.1f}MB)")
+            
             service = Service(driver_path)
             self.driver = webdriver.Chrome(service=service, options=chrome_options)
             

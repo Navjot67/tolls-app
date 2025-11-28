@@ -5,45 +5,24 @@ from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 from automation_selenium import extract_toll_info
 from automation_selenium_nj import extract_toll_info_nj
-from email_service import send_toll_info_email, send_otp_email
+from email_service import send_toll_info_email
 from email_reader import EmailReader, check_emails_and_extract
 from account_manager import add_account
-from user_manager import UserManager
 import time
 import json
 import threading
 
 app = Flask(__name__)
-# CORS configuration - update with your domain
-CORS(app, resources={
-    r"/api/*": {
-        "origins": "*",  # Update to specific domains in production: ["https://yourdomain.com"]
-        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-        "allow_headers": ["Content-Type", "Authorization"]
-    }
-})
+CORS(app)
 
 # Store last fetched data
 last_data = None
 
-# Initialize user manager
-user_manager = UserManager()
-
 
 @app.route('/')
 def index():
-    """Serve the dashboard page or user dashboard based on domain"""
-    # Check if this is a user app domain (optional - for domain-based routing)
-    host = request.host.lower()
-    if 'app' in host or 'user' in host or 'users' in host:
-        return render_template('user_dashboard.html')
+    """Serve the dashboard page"""
     return render_template('dashboard.html')
-
-
-@app.route('/user')
-def user_dashboard():
-    """Serve the user dashboard page"""
-    return render_template('user_dashboard.html')
 
 
 @app.route('/api/fetch-toll-info', methods=['POST'])
@@ -660,277 +639,8 @@ def send_account_email():
         }), 500
 
 
-# ==================== USER AUTHENTICATION ENDPOINTS ====================
-
-@app.route('/api/user/signup', methods=['POST'])
-def user_signup():
-    """User signup endpoint"""
-    try:
-        data = request.json
-        email = data.get('email', '').strip()
-        password = data.get('password', '').strip()
-        name = data.get('name', '').strip()
-        
-        if not email or not password:
-            return jsonify({
-                'success': False,
-                'error': 'Email and password are required'
-            }), 400
-        
-        result = user_manager.signup(email, password, name)
-        
-        if result['success']:
-            # Send OTP email
-            otp = result.get('otp', '')
-            if otp:
-                email_sent = send_otp_email(email, otp, name)
-                if not email_sent:
-                    return jsonify({
-                        'success': False,
-                        'error': 'Account created but failed to send verification email. Please try again later.'
-                    }), 500
-            
-            # Check if this was a re-signup (unverified email)
-            message = 'Account created successfully. Please check your email for verification code.'
-            if result.get('resend', False):
-                message = 'New verification code sent to your email. Please check your inbox.'
-            
-            return jsonify({
-                'success': True,
-                'user': result['user'],
-                'message': message
-            })
-        else:
-            return jsonify({
-                'success': False,
-                'error': result.get('error', 'Signup failed')
-            }), 400
-            
-    except Exception as e:
-        return jsonify({
-            'success': False,
-            'error': f'Server error: {str(e)}'
-        }), 500
-
-
-@app.route('/api/user/login', methods=['POST'])
-def user_login():
-    """User login endpoint"""
-    try:
-        data = request.json
-        email = data.get('email', '').strip()
-        password = data.get('password', '').strip()
-        
-        if not email or not password:
-            return jsonify({
-                'success': False,
-                'error': 'Email and password are required'
-            }), 400
-        
-        result = user_manager.login(email, password)
-        
-        if result['success']:
-            # Link accounts to user by email
-            user_manager.link_accounts_to_user(email)
-            
-            return jsonify({
-                'success': True,
-                'user': result['user'],
-                'message': 'Login successful'
-            })
-        else:
-            return jsonify({
-                'success': False,
-                'error': result.get('error', 'Login failed')
-            }), 401
-            
-    except Exception as e:
-        return jsonify({
-            'success': False,
-            'error': f'Server error: {str(e)}'
-        }), 500
-
-
-@app.route('/api/user/data', methods=['GET'])
-def get_user_data():
-    """Get user data and linked accounts"""
-    try:
-        token = request.headers.get('Authorization', '').replace('Bearer ', '')
-        
-        if not token:
-            return jsonify({
-                'success': False,
-                'error': 'Authentication token required'
-            }), 401
-        
-        user = user_manager.get_user_by_token(token)
-        
-        if not user:
-            return jsonify({
-                'success': False,
-                'error': 'Invalid or expired token'
-            }), 401
-        
-        # Link accounts to user (refresh)
-        user_manager.link_accounts_to_user(user['email'])
-        
-        # Get updated user data
-        user = user_manager.get_user_by_token(token)
-        accounts = user_manager.get_user_accounts(user['email'])
-        
-        return jsonify({
-            'success': True,
-            'user': {
-                'email': user['email'],
-                'name': user.get('name', ''),
-                'created_at': user.get('created_at', ''),
-                'last_login': user.get('last_login', '')
-            },
-            'accounts': accounts
-        })
-        
-    except Exception as e:
-        return jsonify({
-            'success': False,
-            'error': f'Server error: {str(e)}'
-        }), 500
-
-
-@app.route('/api/user/refresh', methods=['POST'])
-def refresh_user_data():
-    """Refresh user data by re-linking accounts"""
-    try:
-        token = request.headers.get('Authorization', '').replace('Bearer ', '')
-        
-        if not token:
-            return jsonify({
-                'success': False,
-                'error': 'Authentication token required'
-            }), 401
-        
-        user = user_manager.get_user_by_token(token)
-        
-        if not user:
-            return jsonify({
-                'success': False,
-                'error': 'Invalid or expired token'
-            }), 401
-        
-        # Link accounts to user
-        user_manager.link_accounts_to_user(user['email'])
-        
-        # Get updated accounts
-        accounts = user_manager.get_user_accounts(user['email'])
-        
-        return jsonify({
-            'success': True,
-            'accounts': accounts,
-            'message': 'Data refreshed successfully'
-        })
-        
-    except Exception as e:
-        return jsonify({
-            'success': False,
-            'error': f'Server error: {str(e)}'
-        }), 500
-
-
-@app.route('/api/user/verify-otp', methods=['POST'])
-def verify_otp():
-    """Verify OTP and activate user account"""
-    try:
-        data = request.json
-        email = data.get('email', '').strip()
-        otp = data.get('otp', '').strip()
-        
-        if not email or not otp:
-            return jsonify({
-                'success': False,
-                'error': 'Email and OTP are required'
-            }), 400
-        
-        result = user_manager.verify_otp(email, otp)
-        
-        if result['success']:
-            # Link accounts to user by email
-            user_manager.link_accounts_to_user(email)
-            
-            return jsonify({
-                'success': True,
-                'user': result.get('user'),
-                'message': result.get('message', 'Email verified successfully')
-            })
-        else:
-            return jsonify({
-                'success': False,
-                'error': result.get('error', 'OTP verification failed')
-            }), 400
-            
-    except Exception as e:
-        return jsonify({
-            'success': False,
-            'error': f'Server error: {str(e)}'
-        }), 500
-
-
-@app.route('/api/user/resend-otp', methods=['POST'])
-def resend_otp():
-    """Resend OTP to user email"""
-    try:
-        data = request.json
-        email = data.get('email', '').strip()
-        
-        if not email:
-            return jsonify({
-                'success': False,
-                'error': 'Email is required'
-            }), 400
-        
-        result = user_manager.resend_otp(email)
-        
-        if result['success']:
-            # Get user name for email
-            user = user_manager.get_user_by_email(email)
-            name = user.get('name', '') if user else ''
-            
-            # Send OTP email
-            otp = result.get('otp', '')
-            if otp:
-                email_sent = send_otp_email(email, otp, name)
-                if not email_sent:
-                    return jsonify({
-                        'success': False,
-                        'error': 'Failed to send verification email. Please try again later.'
-                    }), 500
-            
-            return jsonify({
-                'success': True,
-                'message': 'OTP sent successfully. Please check your email.'
-            })
-        else:
-            return jsonify({
-                'success': False,
-                'error': result.get('error', 'Failed to resend OTP')
-            }), 400
-            
-    except Exception as e:
-        return jsonify({
-            'success': False,
-            'error': f'Server error: {str(e)}'
-        }), 500
-
-
 if __name__ == '__main__':
-    # Development server - use Gunicorn in production
-    import os
-    debug_mode = os.getenv('FLASK_ENV') != 'production'
-    
-    # Use PORT from environment (for Render/Heroku) or default to 5000
-    port = int(os.environ.get('PORT', 5000))
-    
     print("Starting E-ZPass NY Toll Dashboard...")
-    print("⚠️  Development server - Use Gunicorn in production!")
-    print("   Production: gunicorn --config gunicorn_config.py app:app")
-    print(f"   Open http://localhost:{port} in your browser")
-    app.run(debug=debug_mode, host='0.0.0.0', port=port)
+    print("Open http://localhost:5000 in your browser")
+    app.run(debug=True, host='0.0.0.0', port=5000)
 

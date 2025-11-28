@@ -1,0 +1,112 @@
+{
+  "accounts": [
+    {
+      "email": "rinduaulakh@gmail.com",
+      "account_number": "752918782",
+      "plate_number": "AULAKH13",
+      "source": "NY",
+      "sources": [
+        "NY"
+      ],
+      "balance_amount": 0.0,
+      "ny_balance_amount": 0.0,
+      "nj_balance_amount": 0.0,
+      "violation_count": 0,
+      "toll_bill_numbers": [],
+      "last_updated": "11/28/2025, 12:25:38 AM"
+    },
+    {
+      "email": "Gurjinderpandher13@gmail.com",
+      "account_number": "748855526",
+      "plate_number": "PANDHERR",
+      "sources": [
+        "NY"
+      ],
+      "balance_amount": 0.0,
+      "ny_balance_amount": 0.0,
+      "nj_balance_amount": 0.0,
+      "violation_count": 0,
+      "toll_bill_numbers": [],
+      "last_updated": "11/28/2025, 12:26:26 AM"
+    },
+    {
+      "email": "PAWANSIDHU755@GMAIL.COM",
+      "account_number": "733768510",
+      "plate_number": "T127211C",
+      "violation_number": "T132557034241",
+      "nj_violation_number": "T132557034241",
+      "nj_plate_number": "T127211C",
+      "source": "NJ",
+      "sources": [
+        "NY",
+        "NJ"
+      ],
+      "balance_amount": 517.92,
+      "ny_balance_amount": 0.0,
+      "nj_balance_amount": 517.92,
+      "violation_count": 1,
+      "toll_bill_numbers": [
+        "VIOLATION",
+        "T132557034241",
+        "S",
+        "RESOLUTION",
+        "NO",
+        "DETAILS",
+        "OR"
+      ],
+      "last_updated": "11/28/2025, 12:28:27 AM"
+    },
+    {
+      "email": "rajvirlubana12@gmail.com",
+      "account_number": "493790720",
+      "plate_number": "T693884C",
+      "violation_number": "T132556432797",
+      "nj_violation_number": "T132556432797",
+      "nj_plate_number": "T693884C",
+      "source": "NY",
+      "sources": [
+        "NY",
+        "NJ"
+      ],
+      "balance_amount": 0.0,
+      "ny_balance_amount": 0.0,
+      "nj_balance_amount": 0.0,
+      "violation_count": 0,
+      "toll_bill_numbers": [],
+      "last_updated": "11/28/2025, 12:30:25 AM"
+    },
+    {
+      "email": "ravindersinghuppal@icloud.com",
+      "account_number": "732966446",
+      "plate_number": "T125196C",
+      "violation_number": "T132543309065",
+      "nj_violation_number": "T132543309065",
+      "nj_plate_number": "T125196C",
+      "source": "NY",
+      "sources": [
+        "NY",
+        "NJ"
+      ],
+      "balance_amount": 0.0,
+      "ny_balance_amount": 0.0,
+      "nj_balance_amount": 0.0,
+      "violation_count": 0,
+      "toll_bill_numbers": [],
+      "last_updated": "11/28/2025, 12:32:25 AM"
+    }
+  ],
+  "archived_accounts": [
+    {
+      "plate_number": "DYMDBOY",
+      "source": "NY",
+      "sources": [
+        "NY",
+        "NJ"
+      ],
+      "account_number": "644938856",
+      "email": "navjooooooot@gmail.com",
+      "archived_at": "2025-11-24 00:23:30",
+      "archived_reason": "Merged with new NJ account (same email: navjooooooot@gmail.com)"
+    }
+  ]
+}

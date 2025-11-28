@@ -13,7 +13,6 @@ from automation_selenium import extract_toll_info
 from automation_selenium_nj import extract_toll_info_nj
 from email_service import send_toll_info_email
 from account_manager import load_accounts, save_accounts
-from user_manager import UserManager
 import threading
 
 # Change to script directory
@@ -26,9 +25,6 @@ load_dotenv()
 # Configuration file path
 CONFIG_FILE = os.path.join(os.path.dirname(__file__), 'accounts_config.json')
 LOG_FILE = os.path.join(os.path.dirname(__file__), 'auto_fetch.log')
-
-# Initialize user manager
-user_manager = UserManager()
 
 def log_message(message):
     """Log message to file and console"""
@@ -231,30 +227,6 @@ def process_account(account_data, results_list, results_lock):
             if account_updated:
                 # Save updated accounts
                 save_accounts(accounts)
-                
-                # Link accounts to user if email exists
-                if email:
-                    try:
-                        user_manager.link_accounts_to_user(email)
-                        log_message(f"🔗 Linked accounts to user: {email}")
-                    except Exception as e:
-                        log_message(f"⚠️  Could not link accounts to user: {str(e)}")
-                
-                # Sync data to Render (via git)
-                try:
-                    import subprocess
-                    sync_script = os.path.join(os.path.dirname(__file__), 'sync_to_render.sh')
-                    if os.path.exists(sync_script):
-                        result = subprocess.run(['bash', sync_script], 
-                                              capture_output=True, 
-                                              text=True,
-                                              timeout=30)
-                        if result.returncode == 0:
-                            log_message(f"✅ Data synced to Render")
-                        else:
-                            log_message(f"⚠️  Render sync failed: {result.stderr.strip()}")
-                except Exception as e:
-                    log_message(f"⚠️  Could not sync to Render: {str(e)}")
             else:
                 log_message(f"⚠️  Could not find matching account to update (Account: {account_number}, Violation: {violation_number}, Email: {email})")
         except Exception as e:

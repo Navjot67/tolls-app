@@ -134,14 +134,13 @@ def process_email_request(email_data):
 
 def main():
     """Main worker loop"""
-    import sys
-    print("=" * 60, flush=True)
-    print("E-ZPass Email Checker Worker", flush=True)
-    print("=" * 60, flush=True)
-    print(f"Checking emails every {CHECK_INTERVAL} seconds ({CHECK_INTERVAL/60:.1f} minutes)", flush=True)
-    print(f"Email folder: {IMAP_FOLDER}", flush=True)
-    print("Press Ctrl+C to stop", flush=True)
-    print("=" * 60, flush=True)
+    print("=" * 60)
+    print("E-ZPass Email Checker Worker")
+    print("=" * 60)
+    print(f"Checking emails every {CHECK_INTERVAL} seconds ({CHECK_INTERVAL/60:.1f} minutes)")
+    print(f"Email folder: {IMAP_FOLDER}")
+    print("Press Ctrl+C to stop")
+    print("=" * 60)
     
     reader = EmailReader()
     
@@ -155,23 +154,15 @@ def main():
         while True:
             try:
                 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                print(f"\n[{timestamp}] Checking for new emails...", flush=True)
-                
-                # Reconnect if connection is lost
-                if not reader.connection:
-                    print("   🔄 Reconnecting to email server...", flush=True)
-                    if not reader.connect():
-                        print("   ❌ Failed to reconnect, will retry in next cycle", flush=True)
-                        time.sleep(CHECK_INTERVAL)
-                        continue
+                print(f"\n[{timestamp}] Checking for new emails...")
                 
                 # Get unread emails
                 emails = reader.get_unread_emails(folder=IMAP_FOLDER)
                 
                 if not emails:
-                    print("   ℹ️  No emails with account/plate information found", flush=True)
+                    print("   ℹ️  No emails with account/plate information found")
                 else:
-                    print(f"   📬 Found {len(emails)} email(s) with toll requests", flush=True)
+                    print(f"   📬 Found {len(emails)} email(s) with toll requests")
                     
                     # Process each email
                     for email_data in emails:
@@ -193,8 +184,7 @@ def main():
                 traceback.print_exc()
             
             # Wait before next check
-            print(f"\n⏳ Waiting {CHECK_INTERVAL} seconds until next check...", flush=True)
-            sys.stdout.flush()
+            print(f"\n⏳ Waiting {CHECK_INTERVAL} seconds until next check...")
             time.sleep(CHECK_INTERVAL)
     
     finally:

@@ -1,0 +1,1762 @@
+[2025-11-26 21:08:19] ============================================================
+[2025-11-26 21:08:19] 🚀 Starting automated toll information fetch
+[2025-11-26 21:08:19] ============================================================
+[2025-11-26 21:08:19] ✅ Loaded 5 account(s) from config
+[2025-11-26 21:08:19] 📋 Found 5 account(s) to process
+[2025-11-26 21:08:19] 📌 Processing accounts sequentially (one at a time, not in parallel)
+[2025-11-26 21:08:19] ⏱️  Wait time between accounts: 15 seconds
+[2025-11-26 21:08:19] ============================================================
+[2025-11-26 21:08:19] 
+[1/5] Processing account...
+[2025-11-26 21:08:19] 🔄 Processing NY Account: 752918782, Plate: AULAKH13
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 752918782
+✓ Entered account number: 752918782
+Pressing Tab to move to plate number field...
+✓ Entered plate number: AULAKH13
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-26 21:08:50] ✅ NY Success - Balance: $0.00
+[2025-11-26 21:08:50] ✅ Loaded 5 account(s) from config
+[2025-11-26 21:08:50] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-26 21:08:50] 📤 Attempting to send email to rinduaulakh@gmail.com...
+[2025-11-26 21:08:52] ✅ Email sent successfully to rinduaulakh@gmail.com
+[2025-11-26 21:08:52] ✅ Email sent successfully to rinduaulakh@gmail.com (Combined: NY)
+[2025-11-26 21:08:52] ✓ Completed account 1/5
+[2025-11-26 21:08:52] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-26 21:09:07] ✅ Wait complete, proceeding to next account
+[2025-11-26 21:09:07] 
+[2/5] Processing account...
+[2025-11-26 21:09:07] 🔄 Processing NY Account: 748855526, Plate: PANDHERR
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 748855526
+✓ Entered account number: 748855526
+Pressing Tab to move to plate number field...
+✓ Entered plate number: PANDHERR
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-26 21:09:37] ✅ NY Success - Balance: $0.00
+[2025-11-26 21:09:37] ✅ Loaded 5 account(s) from config
+[2025-11-26 21:09:37] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-26 21:09:37] 📤 Attempting to send email to Gurjinderpandher13@gmail.com...
+[2025-11-26 21:09:39] ✅ Email sent successfully to Gurjinderpandher13@gmail.com
+[2025-11-26 21:09:39] ✅ Email sent successfully to Gurjinderpandher13@gmail.com (Combined: NY)
+[2025-11-26 21:09:39] ✓ Completed account 2/5
+[2025-11-26 21:09:39] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-26 21:09:54] ✅ Wait complete, proceeding to next account
+[2025-11-26 21:09:54] 
+[3/5] Processing account...
+[2025-11-26 21:09:54] 🔄 Processing NY Account: 733768510, Plate: T127211C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 733768510
+✓ Entered account number: 733768510
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T127211C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-26 21:10:24] ✅ NY Success - Balance: $0.00
+[2025-11-26 21:10:24] 🔄 Processing NJ Violation: T132557034241, Plate: T127211C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132557034241
+✓ Entered violation number: T132557034241
+Attempting to enter plate number: T127211C
+✓ Entered plate number: T127211C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+✓ Found total amount due: $517.92
+✓ Extracted violation number: T132557034241
+✓ Found additional violation/invoice number: S
+✓ Found additional violation/invoice number: OR
+✓ Found additional violation/invoice number: VIOLATION
+✓ Found additional violation/invoice number: RESOLUTION
+✓ Found additional violation/invoice number: NO
+✓ Found additional violation/invoice number: DETAILS
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $517.92
+Violation/Invoice Numbers: T132557034241, S, OR, VIOLATION, RESOLUTION, NO, DETAILS
+Has Violations: Yes
+============================================================
+
+[2025-11-26 21:11:37] ✅ NJ Success - Balance: $517.92
+[2025-11-26 21:11:37] ✅ Loaded 5 account(s) from config
+[2025-11-26 21:11:37] 💾 Updated account data - NY: $0.00, NJ: $517.92, Total: $517.92
+[2025-11-26 21:11:37] 📤 Attempting to send email to PAWANSIDHU755@GMAIL.COM...
+[2025-11-26 21:11:38] ✅ Email sent successfully to PAWANSIDHU755@GMAIL.COM
+[2025-11-26 21:11:38] ✅ Email sent successfully to PAWANSIDHU755@GMAIL.COM (Combined: NY + NJ)
+[2025-11-26 21:11:38] ✓ Completed account 3/5
+[2025-11-26 21:11:38] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-26 21:11:53] ✅ Wait complete, proceeding to next account
+[2025-11-26 21:11:53] 
+[4/5] Processing account...
+[2025-11-26 21:11:53] 🔄 Processing NY Account: 493790720, Plate: T693884C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 493790720
+✓ Entered account number: 493790720
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T693884C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-26 21:12:23] ✅ NY Success - Balance: $0.00
+[2025-11-26 21:12:23] 🔄 Processing NJ Violation: T132556432797, Plate: T693884C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132556432797
+✓ Entered violation number: T132556432797
+Attempting to enter plate number: T693884C
+✓ Entered plate number: T693884C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+ℹ️  No total amount due found (balance = $0.00)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $0.00
+No amount due - no violations extracted
+============================================================
+
+[2025-11-26 21:13:36] ✅ NJ Success - Balance: $0.00
+[2025-11-26 21:13:36] ✅ Loaded 5 account(s) from config
+[2025-11-26 21:13:36] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-26 21:13:36] 📤 Attempting to send email to rajvirlubana12@gmail.com...
+[2025-11-26 21:13:37] ✅ Email sent successfully to rajvirlubana12@gmail.com
+[2025-11-26 21:13:37] ✅ Email sent successfully to rajvirlubana12@gmail.com (Combined: NY + NJ)
+[2025-11-26 21:13:37] ✓ Completed account 4/5
+[2025-11-26 21:13:37] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-26 21:13:52] ✅ Wait complete, proceeding to next account
+[2025-11-26 21:13:52] 
+[5/5] Processing account...
+[2025-11-26 21:13:52] 🔄 Processing NY Account: 732966446, Plate: T125196C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 732966446
+✓ Entered account number: 732966446
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T125196C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-26 21:14:22] ✅ NY Success - Balance: $0.00
+[2025-11-26 21:14:22] 🔄 Processing NJ Violation: T132543309065, Plate: T125196C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132543309065
+✓ Entered violation number: T132543309065
+Attempting to enter plate number: T125196C
+✓ Entered plate number: T125196C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+ℹ️  No total amount due found (balance = $0.00)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $0.00
+No amount due - no violations extracted
+============================================================
+
+[2025-11-26 21:15:34] ✅ NJ Success - Balance: $0.00
+[2025-11-26 21:15:34] ✅ Loaded 5 account(s) from config
+[2025-11-26 21:15:34] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-26 21:15:34] 📤 Attempting to send email to ravindersinghuppal@icloud.com...
+[2025-11-26 21:15:36] ✅ Email sent successfully to ravindersinghuppal@icloud.com
+[2025-11-26 21:15:36] ✅ Email sent successfully to ravindersinghuppal@icloud.com (Combined: NY + NJ)
+[2025-11-26 21:15:36] ✓ Completed account 5/5
+[2025-11-26 21:15:36] ============================================================
+[2025-11-26 21:15:36] ✅ Completed: 5 successful, 0 failed out of 5 total
+[2025-11-26 21:15:36] ============================================================
+[2025-11-26 21:15:36]
+[2025-11-27 00:15:37] ============================================================
+[2025-11-27 00:15:37] 🚀 Starting automated toll information fetch
+[2025-11-27 00:15:37] ============================================================
+[2025-11-27 00:15:37] ✅ Loaded 5 account(s) from config
+[2025-11-27 00:15:37] 📋 Found 5 account(s) to process
+[2025-11-27 00:15:37] 📌 Processing accounts sequentially (one at a time, not in parallel)
+[2025-11-27 00:15:37] ⏱️  Wait time between accounts: 15 seconds
+[2025-11-27 00:15:37] ============================================================
+[2025-11-27 00:15:37] 
+[1/5] Processing account...
+[2025-11-27 00:15:37] 🔄 Processing NY Account: 752918782, Plate: AULAKH13
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 752918782
+✓ Entered account number: 752918782
+Pressing Tab to move to plate number field...
+✓ Entered plate number: AULAKH13
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 00:16:09] ✅ NY Success - Balance: $0.00
+[2025-11-27 00:16:09] ✅ Loaded 5 account(s) from config
+[2025-11-27 00:16:09] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 00:16:09] 📤 Attempting to send email to rinduaulakh@gmail.com...
+[2025-11-27 00:16:10] ✅ Email sent successfully to rinduaulakh@gmail.com
+[2025-11-27 00:16:10] ✅ Email sent successfully to rinduaulakh@gmail.com (Combined: NY)
+[2025-11-27 00:16:10] ✓ Completed account 1/5
+[2025-11-27 00:16:10] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 00:16:25] ✅ Wait complete, proceeding to next account
+[2025-11-27 00:16:25] 
+[2/5] Processing account...
+[2025-11-27 00:16:25] 🔄 Processing NY Account: 748855526, Plate: PANDHERR
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 748855526
+✓ Entered account number: 748855526
+Pressing Tab to move to plate number field...
+✓ Entered plate number: PANDHERR
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 00:16:55] ✅ NY Success - Balance: $0.00
+[2025-11-27 00:16:55] ✅ Loaded 5 account(s) from config
+[2025-11-27 00:16:55] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 00:16:55] 📤 Attempting to send email to Gurjinderpandher13@gmail.com...
+[2025-11-27 00:16:56] ✅ Email sent successfully to Gurjinderpandher13@gmail.com
+[2025-11-27 00:16:56] ✅ Email sent successfully to Gurjinderpandher13@gmail.com (Combined: NY)
+[2025-11-27 00:16:56] ✓ Completed account 2/5
+[2025-11-27 00:16:56] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 00:17:11] ✅ Wait complete, proceeding to next account
+[2025-11-27 00:17:11] 
+[3/5] Processing account...
+[2025-11-27 00:17:11] 🔄 Processing NY Account: 733768510, Plate: T127211C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 733768510
+✓ Entered account number: 733768510
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T127211C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 00:17:40] ✅ NY Success - Balance: $0.00
+[2025-11-27 00:17:40] 🔄 Processing NJ Violation: T132557034241, Plate: T127211C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132557034241
+✓ Entered violation number: T132557034241
+Attempting to enter plate number: T127211C
+✓ Entered plate number: T127211C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+✓ Found total amount due: $517.92
+✓ Extracted violation number: T132557034241
+✓ Found additional violation/invoice number: S
+✓ Found additional violation/invoice number: OR
+✓ Found additional violation/invoice number: VIOLATION
+✓ Found additional violation/invoice number: RESOLUTION
+✓ Found additional violation/invoice number: NO
+✓ Found additional violation/invoice number: DETAILS
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $517.92
+Violation/Invoice Numbers: T132557034241, S, OR, VIOLATION, RESOLUTION, NO, DETAILS
+Has Violations: Yes
+============================================================
+
+[2025-11-27 00:18:52] ✅ NJ Success - Balance: $517.92
+[2025-11-27 00:18:52] ✅ Loaded 5 account(s) from config
+[2025-11-27 00:18:52] 💾 Updated account data - NY: $0.00, NJ: $517.92, Total: $517.92
+[2025-11-27 00:18:52] 📤 Attempting to send email to PAWANSIDHU755@GMAIL.COM...
+[2025-11-27 00:18:53] ✅ Email sent successfully to PAWANSIDHU755@GMAIL.COM
+[2025-11-27 00:18:53] ✅ Email sent successfully to PAWANSIDHU755@GMAIL.COM (Combined: NY + NJ)
+[2025-11-27 00:18:53] ✓ Completed account 3/5
+[2025-11-27 00:18:53] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 00:19:08] ✅ Wait complete, proceeding to next account
+[2025-11-27 00:19:08] 
+[4/5] Processing account...
+[2025-11-27 00:19:08] 🔄 Processing NY Account: 493790720, Plate: T693884C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 493790720
+✓ Entered account number: 493790720
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T693884C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 00:19:38] ✅ NY Success - Balance: $0.00
+[2025-11-27 00:19:38] 🔄 Processing NJ Violation: T132556432797, Plate: T693884C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[id*="notice"]
+Attempting to enter violation number: T132556432797
+Error entering violation number: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+0   chromedriver                        0x000000010075eecc cxxbridge1$str$ptr + 2941512
+1   chromedriver                        0x0000000100756b88 cxxbridge1$str$ptr + 2907908
+2   chromedriver                        0x000000010026e114 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73608
+3   chromedriver                        0x00000001002b68a8 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 370460
+4   chromedriver                        0x00000001002aba78 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 325868
+5   chromedriver                        0x00000001002ab504 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 324472
+6   chromedriver                        0x00000001002f6d54 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633800
+7   chromedriver                        0x00000001002a9ef0 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 318820
+8   chromedriver                        0x00000001007220c8 cxxbridge1$str$ptr + 2692164
+9   chromedriver                        0x00000001007258dc cxxbridge1$str$ptr + 2706520
+10  chromedriver                        0x000000010070284c cxxbridge1$str$ptr + 2563016
+11  chromedriver                        0x00000001007261b4 cxxbridge1$str$ptr + 2708784
+12  chromedriver                        0x00000001006f40f4 cxxbridge1$str$ptr + 2503792
+13  chromedriver                        0x0000000100745498 cxxbridge1$str$ptr + 2836500
+14  chromedriver                        0x000000010074561c cxxbridge1$str$ptr + 2836888
+15  chromedriver                        0x00000001007567d8 cxxbridge1$str$ptr + 2906964
+16  libsystem_pthread.dylib             0x000000019d284c08 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019d27fba8 thread_start + 8
+
+Attempting to enter plate number: T693884C
+Error entering plate number: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+0   chromedriver                        0x000000010075eecc cxxbridge1$str$ptr + 2941512
+1   chromedriver                        0x0000000100756b88 cxxbridge1$str$ptr + 2907908
+2   chromedriver                        0x000000010026e114 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73608
+3   chromedriver                        0x00000001002b68a8 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 370460
+4   chromedriver                        0x00000001002aba78 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 325868
+5   chromedriver                        0x00000001002ab504 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 324472
+6   chromedriver                        0x00000001002f6d54 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633800
+7   chromedriver                        0x00000001002a9ef0 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 318820
+8   chromedriver                        0x00000001007220c8 cxxbridge1$str$ptr + 2692164
+9   chromedriver                        0x00000001007258dc cxxbridge1$str$ptr + 2706520
+10  chromedriver                        0x000000010070284c cxxbridge1$str$ptr + 2563016
+11  chromedriver                        0x00000001007261b4 cxxbridge1$str$ptr + 2708784
+12  chromedriver                        0x00000001006f40f4 cxxbridge1$str$ptr + 2503792
+13  chromedriver                        0x0000000100745498 cxxbridge1$str$ptr + 2836500
+14  chromedriver                        0x000000010074561c cxxbridge1$str$ptr + 2836888
+15  chromedriver                        0x00000001007567d8 cxxbridge1$str$ptr + 2906964
+16  libsystem_pthread.dylib             0x000000019d284c08 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019d27fba8 thread_start + 8
+
+Looking for 'View Invoice / Violation / Toll Bill' button...
+⚠️  Could not find 'View Invoice / Violation / Toll Bill' button
+Error fetching violation info: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+0   chromedriver                        0x000000010075eecc cxxbridge1$str$ptr + 2941512
+1   chromedriver                        0x0000000100756b88 cxxbridge1$str$ptr + 2907908
+2   chromedriver                        0x000000010026e114 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73608
+3   chromedriver                        0x00000001002b0778 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 345580
+4   chromedriver                        0x00000001002af15c _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 339920
+5   chromedriver                        0x00000001002ab504 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 324472
+6   chromedriver                        0x00000001002f6d54 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633800
+7   chromedriver                        0x00000001002a9ef0 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 318820
+8   chromedriver                        0x00000001007220c8 cxxbridge1$str$ptr + 2692164
+9   chromedriver                        0x00000001007258dc cxxbridge1$str$ptr + 2706520
+10  chromedriver                        0x000000010070284c cxxbridge1$str$ptr + 2563016
+11  chromedriver                        0x00000001007261b4 cxxbridge1$str$ptr + 2708784
+12  chromedriver                        0x00000001006f40f4 cxxbridge1$str$ptr + 2503792
+13  chromedriver                        0x0000000100745498 cxxbridge1$str$ptr + 2836500
+14  chromedriver                        0x000000010074561c cxxbridge1$str$ptr + 2836888
+15  chromedriver                        0x00000001007567d8 cxxbridge1$str$ptr + 2906964
+16  libsystem_pthread.dylib             0x000000019d284c08 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019d27fba8 thread_start + 8
+
+[2025-11-27 00:20:23] ❌ NJ Failed: Error fetching violation info: Message: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+0   chromedriver                        0x000000010075eecc cxxbridge1$str$ptr + 2941512
+1   chromedriver                        0x0000000100756b88 cxxbridge1$str$ptr + 2907908
+2   chromedriver                        0x000000010026e114 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73608
+3   chromedriver                        0x00000001002b0778 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 345580
+4   chromedriver                        0x00000001002af15c _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 339920
+5   chromedriver                        0x00000001002ab504 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 324472
+6   chromedriver                        0x00000001002f6d54 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633800
+7   chromedriver                        0x00000001002a9ef0 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 318820
+8   chromedriver                        0x00000001007220c8 cxxbridge1$str$ptr + 2692164
+9   chromedriver                        0x00000001007258dc cxxbridge1$str$ptr + 2706520
+10  chromedriver                        0x000000010070284c cxxbridge1$str$ptr + 2563016
+11  chromedriver                        0x00000001007261b4 cxxbridge1$str$ptr + 2708784
+12  chromedriver                        0x00000001006f40f4 cxxbridge1$str$ptr + 2503792
+13  chromedriver                        0x0000000100745498 cxxbridge1$str$ptr + 2836500
+14  chromedriver                        0x000000010074561c cxxbridge1$str$ptr + 2836888
+15  chromedriver                        0x00000001007567d8 cxxbridge1$str$ptr + 2906964
+16  libsystem_pthread.dylib             0x000000019d284c08 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019d27fba8 thread_start + 8
+[2025-11-27 00:20:23] ✅ Loaded 5 account(s) from config
+[2025-11-27 00:20:23] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 00:20:23] 📤 Attempting to send email to rajvirlubana12@gmail.com...
+[2025-11-27 00:20:25] ✅ Email sent successfully to rajvirlubana12@gmail.com
+[2025-11-27 00:20:25] ✅ Email sent successfully to rajvirlubana12@gmail.com (Combined: NY + NJ)
+[2025-11-27 00:20:25] ✓ Completed account 4/5
+[2025-11-27 00:20:25] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 00:20:40] ✅ Wait complete, proceeding to next account
+[2025-11-27 00:20:40] 
+[5/5] Processing account...
+[2025-11-27 00:20:40] 🔄 Processing NY Account: 732966446, Plate: T125196C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 732966446
+✓ Entered account number: 732966446
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T125196C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 00:21:10] ✅ NY Success - Balance: $0.00
+[2025-11-27 00:21:10] 🔄 Processing NJ Violation: T132543309065, Plate: T125196C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132543309065
+✓ Entered violation number: T132543309065
+Attempting to enter plate number: T125196C
+✓ Entered plate number: T125196C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+ℹ️  No total amount due found (balance = $0.00)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $0.00
+No amount due - no violations extracted
+============================================================
+
+[2025-11-27 00:22:23] ✅ NJ Success - Balance: $0.00
+[2025-11-27 00:22:23] ✅ Loaded 5 account(s) from config
+[2025-11-27 00:22:23] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 00:22:23] 📤 Attempting to send email to ravindersinghuppal@icloud.com...
+[2025-11-27 00:22:25] ✅ Email sent successfully to ravindersinghuppal@icloud.com
+[2025-11-27 00:22:25] ✅ Email sent successfully to ravindersinghuppal@icloud.com (Combined: NY + NJ)
+[2025-11-27 00:22:25] ✓ Completed account 5/5
+[2025-11-27 00:22:25] ============================================================
+[2025-11-27 00:22:25] ✅ Completed: 5 successful, 0 failed out of 5 total
+[2025-11-27 00:22:25] ============================================================
+[2025-11-27 00:22:25]
+[2025-11-27 03:22:25] ============================================================
+[2025-11-27 03:22:25] 🚀 Starting automated toll information fetch
+[2025-11-27 03:22:25] ============================================================
+[2025-11-27 03:22:25] ✅ Loaded 5 account(s) from config
+[2025-11-27 03:22:25] 📋 Found 5 account(s) to process
+[2025-11-27 03:22:25] 📌 Processing accounts sequentially (one at a time, not in parallel)
+[2025-11-27 03:22:25] ⏱️  Wait time between accounts: 15 seconds
+[2025-11-27 03:22:25] ============================================================
+[2025-11-27 03:22:25] 
+[1/5] Processing account...
+[2025-11-27 03:22:25] 🔄 Processing NY Account: 752918782, Plate: AULAKH13
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 752918782
+✓ Entered account number: 752918782
+Pressing Tab to move to plate number field...
+✓ Entered plate number: AULAKH13
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 03:22:56] ✅ NY Success - Balance: $0.00
+[2025-11-27 03:22:56] ✅ Loaded 5 account(s) from config
+[2025-11-27 03:22:56] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 03:22:56] 📤 Attempting to send email to rinduaulakh@gmail.com...
+[2025-11-27 03:23:00] ✅ Email sent successfully to rinduaulakh@gmail.com
+[2025-11-27 03:23:00] ✅ Email sent successfully to rinduaulakh@gmail.com (Combined: NY)
+[2025-11-27 03:23:00] ✓ Completed account 1/5
+[2025-11-27 03:23:00] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 03:23:15] ✅ Wait complete, proceeding to next account
+[2025-11-27 03:23:15] 
+[2/5] Processing account...
+[2025-11-27 03:23:15] 🔄 Processing NY Account: 748855526, Plate: PANDHERR
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 748855526
+✓ Entered account number: 748855526
+Pressing Tab to move to plate number field...
+✓ Entered plate number: PANDHERR
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 03:23:44] ✅ NY Success - Balance: $0.00
+[2025-11-27 03:23:44] ✅ Loaded 5 account(s) from config
+[2025-11-27 03:23:44] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 03:23:44] 📤 Attempting to send email to Gurjinderpandher13@gmail.com...
+[2025-11-27 03:23:46] ✅ Email sent successfully to Gurjinderpandher13@gmail.com
+[2025-11-27 03:23:46] ✅ Email sent successfully to Gurjinderpandher13@gmail.com (Combined: NY)
+[2025-11-27 03:23:46] ✓ Completed account 2/5
+[2025-11-27 03:23:46] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 03:24:01] ✅ Wait complete, proceeding to next account
+[2025-11-27 03:24:01] 
+[3/5] Processing account...
+[2025-11-27 03:24:01] 🔄 Processing NY Account: 733768510, Plate: T127211C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 733768510
+✓ Entered account number: 733768510
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T127211C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 03:24:30] ✅ NY Success - Balance: $0.00
+[2025-11-27 03:24:30] 🔄 Processing NJ Violation: T132557034241, Plate: T127211C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132557034241
+✓ Entered violation number: T132557034241
+Attempting to enter plate number: T127211C
+✓ Entered plate number: T127211C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+✓ Found total amount due: $517.92
+✓ Extracted violation number: T132557034241
+✓ Found additional violation/invoice number: S
+✓ Found additional violation/invoice number: OR
+✓ Found additional violation/invoice number: VIOLATION
+✓ Found additional violation/invoice number: RESOLUTION
+✓ Found additional violation/invoice number: NO
+✓ Found additional violation/invoice number: DETAILS
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $517.92
+Violation/Invoice Numbers: T132557034241, S, OR, VIOLATION, RESOLUTION, NO, DETAILS
+Has Violations: Yes
+============================================================
+
+[2025-11-27 03:25:45] ✅ NJ Success - Balance: $517.92
+[2025-11-27 03:25:45] ✅ Loaded 5 account(s) from config
+[2025-11-27 03:25:45] 💾 Updated account data - NY: $0.00, NJ: $517.92, Total: $517.92
+[2025-11-27 03:25:45] 📤 Attempting to send email to PAWANSIDHU755@GMAIL.COM...
+[2025-11-27 03:25:48] ✅ Email sent successfully to PAWANSIDHU755@GMAIL.COM
+[2025-11-27 03:25:48] ✅ Email sent successfully to PAWANSIDHU755@GMAIL.COM (Combined: NY + NJ)
+[2025-11-27 03:25:48] ✓ Completed account 3/5
+[2025-11-27 03:25:48] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 03:26:03] ✅ Wait complete, proceeding to next account
+[2025-11-27 03:26:03] 
+[4/5] Processing account...
+[2025-11-27 03:26:03] 🔄 Processing NY Account: 493790720, Plate: T693884C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 493790720
+✓ Entered account number: 493790720
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T693884C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 03:26:33] ✅ NY Success - Balance: $0.00
+[2025-11-27 03:26:33] 🔄 Processing NJ Violation: T132556432797, Plate: T693884C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132556432797
+✓ Entered violation number: T132556432797
+Attempting to enter plate number: T693884C
+✓ Entered plate number: T693884C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+ℹ️  No total amount due found (balance = $0.00)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $0.00
+No amount due - no violations extracted
+============================================================
+
+[2025-11-27 03:27:45] ✅ NJ Success - Balance: $0.00
+[2025-11-27 03:27:45] ✅ Loaded 5 account(s) from config
+[2025-11-27 03:27:45] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 03:27:45] 📤 Attempting to send email to rajvirlubana12@gmail.com...
+[2025-11-27 03:27:47] ✅ Email sent successfully to rajvirlubana12@gmail.com
+[2025-11-27 03:27:47] ✅ Email sent successfully to rajvirlubana12@gmail.com (Combined: NY + NJ)
+[2025-11-27 03:27:47] ✓ Completed account 4/5
+[2025-11-27 03:27:47] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 03:28:02] ✅ Wait complete, proceeding to next account
+[2025-11-27 03:28:02] 
+[5/5] Processing account...
+[2025-11-27 03:28:02] 🔄 Processing NY Account: 732966446, Plate: T125196C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 732966446
+✓ Entered account number: 732966446
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T125196C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 03:28:31] ✅ NY Success - Balance: $0.00
+[2025-11-27 03:28:31] 🔄 Processing NJ Violation: T132543309065, Plate: T125196C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132543309065
+✓ Entered violation number: T132543309065
+Attempting to enter plate number: T125196C
+✓ Entered plate number: T125196C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+ℹ️  No total amount due found (balance = $0.00)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $0.00
+No amount due - no violations extracted
+============================================================
+
+[2025-11-27 03:29:43] ✅ NJ Success - Balance: $0.00
+[2025-11-27 03:29:43] ✅ Loaded 5 account(s) from config
+[2025-11-27 03:29:43] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 03:29:43] 📤 Attempting to send email to ravindersinghuppal@icloud.com...
+[2025-11-27 03:29:46] ✅ Email sent successfully to ravindersinghuppal@icloud.com
+[2025-11-27 03:29:46] ✅ Email sent successfully to ravindersinghuppal@icloud.com (Combined: NY + NJ)
+[2025-11-27 03:29:46] ✓ Completed account 5/5
+[2025-11-27 03:29:46] ============================================================
+[2025-11-27 03:29:46] ✅ Completed: 5 successful, 0 failed out of 5 total
+[2025-11-27 03:29:46] ============================================================
+[2025-11-27 03:29:46]
+[2025-11-27 08:39:06] ============================================================
+[2025-11-27 08:39:06] 🚀 Starting automated toll information fetch
+[2025-11-27 08:39:06] ============================================================
+[2025-11-27 08:39:06] ✅ Loaded 5 account(s) from config
+[2025-11-27 08:39:06] 📋 Found 5 account(s) to process
+[2025-11-27 08:39:06] 📌 Processing accounts sequentially (one at a time, not in parallel)
+[2025-11-27 08:39:06] ⏱️  Wait time between accounts: 15 seconds
+[2025-11-27 08:39:06] ============================================================
+[2025-11-27 08:39:06] 
+[1/5] Processing account...
+[2025-11-27 08:39:06] 🔄 Processing NY Account: 752918782, Plate: AULAKH13
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 752918782
+✓ Entered account number: 752918782
+Pressing Tab to move to plate number field...
+✓ Entered plate number: AULAKH13
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 08:39:40] ✅ NY Success - Balance: $0.00
+[2025-11-27 08:39:40] ✅ Loaded 5 account(s) from config
+[2025-11-27 08:39:40] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 08:39:40] 📤 Attempting to send email to rinduaulakh@gmail.com...
+[2025-11-27 08:39:42] ✅ Email sent successfully to rinduaulakh@gmail.com
+[2025-11-27 08:39:42] ✅ Email sent successfully to rinduaulakh@gmail.com (Combined: NY)
+[2025-11-27 08:39:42] ✓ Completed account 1/5
+[2025-11-27 08:39:42] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 08:55:35] ✅ Wait complete, proceeding to next account
+[2025-11-27 08:55:35] 
+[2/5] Processing account...
+[2025-11-27 08:55:35] 🔄 Processing NY Account: 748855526, Plate: PANDHERR
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 748855526
+✓ Entered account number: 748855526
+Pressing Tab to move to plate number field...
+✓ Entered plate number: PANDHERR
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 08:56:07] ✅ NY Success - Balance: $0.00
+[2025-11-27 08:56:07] ✅ Loaded 5 account(s) from config
+[2025-11-27 08:56:07] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 08:56:07] 📤 Attempting to send email to Gurjinderpandher13@gmail.com...
+[2025-11-27 08:56:08] ✅ Email sent successfully to Gurjinderpandher13@gmail.com
+[2025-11-27 08:56:08] ✅ Email sent successfully to Gurjinderpandher13@gmail.com (Combined: NY)
+[2025-11-27 08:56:08] ✓ Completed account 2/5
+[2025-11-27 08:56:08] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 08:56:23] ✅ Wait complete, proceeding to next account
+[2025-11-27 08:56:23] 
+[3/5] Processing account...
+[2025-11-27 08:56:23] 🔄 Processing NY Account: 733768510, Plate: T127211C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 733768510
+✓ Entered account number: 733768510
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T127211C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 09:12:45] ✅ NY Success - Balance: $0.00
+[2025-11-27 09:12:45] 🔄 Processing NJ Violation: T132557034241, Plate: T127211C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132557034241
+✓ Entered violation number: T132557034241
+Attempting to enter plate number: T127211C
+✓ Entered plate number: T127211C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+✓ Found total amount due: $517.92
+✓ Extracted violation number: T132557034241
+✓ Found additional violation/invoice number: S
+✓ Found additional violation/invoice number: OR
+✓ Found additional violation/invoice number: VIOLATION
+✓ Found additional violation/invoice number: RESOLUTION
+✓ Found additional violation/invoice number: NO
+✓ Found additional violation/invoice number: DETAILS
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $517.92
+Violation/Invoice Numbers: T132557034241, S, OR, VIOLATION, RESOLUTION, NO, DETAILS
+Has Violations: Yes
+============================================================
+
+[2025-11-27 09:57:06] ✅ NJ Success - Balance: $517.92
+[2025-11-27 09:57:06] ✅ Loaded 5 account(s) from config
+[2025-11-27 09:57:06] 💾 Updated account data - NY: $0.00, NJ: $517.92, Total: $517.92
+[2025-11-27 09:57:06] 📤 Attempting to send email to PAWANSIDHU755@GMAIL.COM...
+[2025-11-27 09:57:07] ✅ Email sent successfully to PAWANSIDHU755@GMAIL.COM
+[2025-11-27 09:57:07] ✅ Email sent successfully to PAWANSIDHU755@GMAIL.COM (Combined: NY + NJ)
+[2025-11-27 09:57:07] ✓ Completed account 3/5
+[2025-11-27 09:57:07] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 09:57:22] ✅ Wait complete, proceeding to next account
+[2025-11-27 09:57:22] 
+[4/5] Processing account...
+[2025-11-27 09:57:22] 🔄 Processing NY Account: 493790720, Plate: T693884C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 493790720
+✓ Entered account number: 493790720
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T693884C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 09:57:58] ✅ NY Success - Balance: $0.00
+[2025-11-27 09:57:58] 🔄 Processing NJ Violation: T132556432797, Plate: T693884C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132556432797
+✓ Entered violation number: T132556432797
+Attempting to enter plate number: T693884C
+✓ Entered plate number: T693884C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+ℹ️  No total amount due found (balance = $0.00)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $0.00
+No amount due - no violations extracted
+============================================================
+
+[2025-11-27 10:29:49] ✅ NJ Success - Balance: $0.00
+[2025-11-27 10:29:49] ✅ Loaded 5 account(s) from config
+[2025-11-27 10:29:49] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 10:29:49] 📤 Attempting to send email to rajvirlubana12@gmail.com...
+[2025-11-27 10:29:51] ✅ Email sent successfully to rajvirlubana12@gmail.com
+[2025-11-27 10:29:51] ✅ Email sent successfully to rajvirlubana12@gmail.com (Combined: NY + NJ)
+[2025-11-27 10:29:51] ✓ Completed account 4/5
+[2025-11-27 10:29:51] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-27 10:45:32] ✅ Wait complete, proceeding to next account
+[2025-11-27 10:45:32] 
+[5/5] Processing account...
+[2025-11-27 10:45:32] 🔄 Processing NY Account: 732966446, Plate: T125196C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 732966446
+✓ Entered account number: 732966446
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T125196C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-27 10:46:14] ✅ NY Success - Balance: $0.00
+[2025-11-27 10:46:14] 🔄 Processing NJ Violation: T132543309065, Plate: T125196C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132543309065
+✓ Entered violation number: T132543309065
+Attempting to enter plate number: T125196C
+✓ Entered plate number: T125196C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+ℹ️  No total amount due found (balance = $0.00)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $0.00
+No amount due - no violations extracted
+============================================================
+
+[2025-11-27 11:15:26] ✅ NJ Success - Balance: $0.00
+[2025-11-27 11:15:26] ✅ Loaded 5 account(s) from config
+[2025-11-27 11:15:26] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-27 11:15:26] 📤 Attempting to send email to ravindersinghuppal@icloud.com...
+[2025-11-27 11:15:27] ✅ Email sent successfully to ravindersinghuppal@icloud.com
+[2025-11-27 11:15:27] ✅ Email sent successfully to ravindersinghuppal@icloud.com (Combined: NY + NJ)
+[2025-11-27 11:15:27] ✓ Completed account 5/5
+[2025-11-27 11:15:27] ============================================================
+[2025-11-27 11:15:27] ✅ Completed: 5 successful, 0 failed out of 5 total
+[2025-11-27 11:15:27] ============================================================
+[2025-11-27 11:15:27]
+[2025-11-28 00:25:07] ============================================================
+[2025-11-28 00:25:07] 🚀 Starting automated toll information fetch
+[2025-11-28 00:25:07] ============================================================
+[2025-11-28 00:25:07] ✅ Loaded 5 account(s) from config
+[2025-11-28 00:25:07] 📋 Found 5 account(s) to process
+[2025-11-28 00:25:07] 📌 Processing accounts sequentially (one at a time, not in parallel)
+[2025-11-28 00:25:07] ⏱️  Wait time between accounts: 15 seconds
+[2025-11-28 00:25:07] ============================================================
+[2025-11-28 00:25:07] 
+[1/5] Processing account...
+[2025-11-28 00:25:07] 🔄 Processing NY Account: 752918782, Plate: AULAKH13
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 752918782
+✓ Entered account number: 752918782
+Pressing Tab to move to plate number field...
+✓ Entered plate number: AULAKH13
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-28 00:25:38] ✅ NY Success - Balance: $0.00
+[2025-11-28 00:25:38] ✅ Loaded 5 account(s) from config
+[2025-11-28 00:25:38] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-28 00:25:38] 📤 Attempting to send email to rinduaulakh@gmail.com...
+[2025-11-28 00:25:41] ✅ Email sent successfully to rinduaulakh@gmail.com
+[2025-11-28 00:25:41] ✅ Email sent successfully to rinduaulakh@gmail.com (Combined: NY)
+[2025-11-28 00:25:41] ✓ Completed account 1/5
+[2025-11-28 00:25:41] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-28 00:25:56] ✅ Wait complete, proceeding to next account
+[2025-11-28 00:25:56] 
+[2/5] Processing account...
+[2025-11-28 00:25:56] 🔄 Processing NY Account: 748855526, Plate: PANDHERR
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 748855526
+✓ Entered account number: 748855526
+Pressing Tab to move to plate number field...
+✓ Entered plate number: PANDHERR
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-28 00:26:26] ✅ NY Success - Balance: $0.00
+[2025-11-28 00:26:26] ✅ Loaded 5 account(s) from config
+[2025-11-28 00:26:26] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-28 00:26:26] 📤 Attempting to send email to Gurjinderpandher13@gmail.com...
+[2025-11-28 00:26:28] ✅ Email sent successfully to Gurjinderpandher13@gmail.com
+[2025-11-28 00:26:28] ✅ Email sent successfully to Gurjinderpandher13@gmail.com (Combined: NY)
+[2025-11-28 00:26:28] ✓ Completed account 2/5
+[2025-11-28 00:26:28] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-28 00:26:43] ✅ Wait complete, proceeding to next account
+[2025-11-28 00:26:43] 
+[3/5] Processing account...
+[2025-11-28 00:26:43] 🔄 Processing NY Account: 733768510, Plate: T127211C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 733768510
+✓ Entered account number: 733768510
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T127211C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-28 00:27:13] ✅ NY Success - Balance: $0.00
+[2025-11-28 00:27:13] 🔄 Processing NJ Violation: T132557034241, Plate: T127211C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132557034241
+✓ Entered violation number: T132557034241
+Attempting to enter plate number: T127211C
+✓ Entered plate number: T127211C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+✓ Found total amount due: $517.92
+✓ Extracted violation number: T132557034241
+✓ Found additional violation/invoice number: S
+✓ Found additional violation/invoice number: OR
+✓ Found additional violation/invoice number: VIOLATION
+✓ Found additional violation/invoice number: RESOLUTION
+✓ Found additional violation/invoice number: NO
+✓ Found additional violation/invoice number: DETAILS
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $517.92
+Violation/Invoice Numbers: T132557034241, S, OR, VIOLATION, RESOLUTION, NO, DETAILS
+Has Violations: Yes
+============================================================
+
+[2025-11-28 00:28:27] ✅ NJ Success - Balance: $517.92
+[2025-11-28 00:28:27] ✅ Loaded 5 account(s) from config
+[2025-11-28 00:28:27] 💾 Updated account data - NY: $0.00, NJ: $517.92, Total: $517.92
+[2025-11-28 00:28:27] 📤 Attempting to send email to PAWANSIDHU755@GMAIL.COM...
+[2025-11-28 00:28:28] ✅ Email sent successfully to PAWANSIDHU755@GMAIL.COM
+[2025-11-28 00:28:28] ✅ Email sent successfully to PAWANSIDHU755@GMAIL.COM (Combined: NY + NJ)
+[2025-11-28 00:28:28] ✓ Completed account 3/5
+[2025-11-28 00:28:28] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-28 00:28:43] ✅ Wait complete, proceeding to next account
+[2025-11-28 00:28:43] 
+[4/5] Processing account...
+[2025-11-28 00:28:43] 🔄 Processing NY Account: 493790720, Plate: T693884C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 493790720
+✓ Entered account number: 493790720
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T693884C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-28 00:29:14] ✅ NY Success - Balance: $0.00
+[2025-11-28 00:29:14] 🔄 Processing NJ Violation: T132556432797, Plate: T693884C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132556432797
+✓ Entered violation number: T132556432797
+Attempting to enter plate number: T693884C
+✓ Entered plate number: T693884C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+ℹ️  No total amount due found (balance = $0.00)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $0.00
+No amount due - no violations extracted
+============================================================
+
+[2025-11-28 00:30:25] ✅ NJ Success - Balance: $0.00
+[2025-11-28 00:30:25] ✅ Loaded 5 account(s) from config
+[2025-11-28 00:30:25] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-28 00:30:25] 📤 Attempting to send email to rajvirlubana12@gmail.com...
+[2025-11-28 00:30:27] ✅ Email sent successfully to rajvirlubana12@gmail.com
+[2025-11-28 00:30:27] ✅ Email sent successfully to rajvirlubana12@gmail.com (Combined: NY + NJ)
+[2025-11-28 00:30:27] ✓ Completed account 4/5
+[2025-11-28 00:30:27] ⏳ Waiting 15 seconds before processing next account...
+[2025-11-28 00:30:42] ✅ Wait complete, proceeding to next account
+[2025-11-28 00:30:42] 
+[5/5] Processing account...
+[2025-11-28 00:30:42] 🔄 Processing NY Account: 732966446, Plate: T125196C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 732966446
+✓ Entered account number: 732966446
+Pressing Tab to move to plate number field...
+✓ Entered plate number: T125196C
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+
+[2025-11-28 00:31:13] ✅ NY Success - Balance: $0.00
+[2025-11-28 00:31:13] 🔄 Processing NJ Violation: T132543309065, Plate: T125196C
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NJ homepage...
+✓ Homepage loaded: https://www.ezpassnj.com/en/home/index.shtml
+Looking for Invoice/Violation payment section...
+Searching for Invoice/Violation payment option...
+✓ Clicked Invoice link (alternative)
+Waiting for violation form to appear...
+Entering violation number and plate number...
+Trying to find input fields...
+✓ Found inputs using selector: input[placeholder*="Invoice"]
+Attempting to enter violation number: T132543309065
+✓ Entered violation number: T132543309065
+Attempting to enter plate number: T125196C
+✓ Entered plate number: T125196C
+Looking for 'View Invoice / Violation / Toll Bill' button...
+✓ Found button: 'View Invoice / Violation / Toll Bill'
+✓ Clicked 'View Invoice / Violation / Toll Bill' button (JavaScript click)
+Waiting 10 seconds for results to load...
+Extracting violation information...
+ℹ️  No total amount due found (balance = $0.00)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Amount Due: $0.00
+No amount due - no violations extracted
+============================================================
+
+[2025-11-28 00:32:25] ✅ NJ Success - Balance: $0.00
+[2025-11-28 00:32:25] ✅ Loaded 5 account(s) from config
+[2025-11-28 00:32:25] 💾 Updated account data - NY: $0.00, NJ: $0.00, Total: $0.00
+[2025-11-28 00:32:25] 📤 Attempting to send email to ravindersinghuppal@icloud.com...
+[2025-11-28 00:32:27] ✅ Email sent successfully to ravindersinghuppal@icloud.com
+[2025-11-28 00:32:27] ✅ Email sent successfully to ravindersinghuppal@icloud.com (Combined: NY + NJ)
+[2025-11-28 00:32:27] ✓ Completed account 5/5
+[2025-11-28 00:32:27] ============================================================
+[2025-11-28 00:32:27] ✅ Completed: 5 successful, 0 failed out of 5 total
+[2025-11-28 00:32:27] ============================================================
+[2025-11-28 00:32:27]

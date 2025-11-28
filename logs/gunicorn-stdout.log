@@ -1,0 +1,32 @@
+✅ Email sent successfully to rinduaulakh@gmail.com
+Launching Chrome browser...
+⚠️  ChromeDriverManager returned suspicious file: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver (0.7MB)
+🔍 Searching for chromedriver executable in: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64
+✅ Found chromedriver executable: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+🚀 Using ChromeDriver: /Users/ghuman/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver (14.9MB)
+Browser launched (headless=False)
+Navigating to E-ZPass NY homepage...
+✓ Homepage loaded: https://www.e-zpassny.com/
+Navigating to Pay Toll page...
+✓ Pay Toll page loaded: https://www.e-zpassny.com/tbm/pay-toll
+Entering account number: 752918782
+✓ Entered account number: 752918782
+Pressing Tab to move to plate number field...
+✓ Entered plate number: AULAKH13
+Submitting form...
+✓ Form submitted (SEARCH button clicked)
+Waiting 15 seconds for results to load...
+Extracting financial information...
+ℹ️  Using balance_amount ($0.00) as total_balance_due (toll_charges likely included)
+
+============================================================
+EXTRACTION COMPLETE
+============================================================
+Total Balance Due: $0.00
+Account Balance: $0.00
+Final Balance: $0.00
+Toll Charges: $0.00
+Toll Bill Numbers: None found
+Violations: 0
+============================================================
+

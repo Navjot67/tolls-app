@@ -125,7 +125,12 @@ class EmailReader:
             pass  # Will validate more strictly below
         
         # Patterns to match account number (typically digits, minimum 3 characters)
+        # Support formats like:
+        # - "NY Toll Bill Account Number: 752918782"
+        # - "Account Number: 752918782"
+        # - "Account: 752918782"
         account_patterns = [
+            r'ny\s*toll\s*bill\s*account\s*number\s*[:\-]?\s*([a-z0-9]{3,}(?:[\-]?[a-z0-9]+)*)',
             r'account\s*(?:number|#|num)?\s*[:\-]?\s*([a-z0-9]{3,}(?:[\-]?[a-z0-9]+)*)',
             r'account\s*[:]\s*([a-z0-9]{3,}(?:[\-]?[a-z0-9]+)*)',
             r'account[:]\s*([a-z0-9]{3,}(?:[\-]?[a-z0-9]+)*)',
@@ -142,6 +147,9 @@ class EmailReader:
         ]
         
         # Patterns to match plate number (typically alphanumeric, minimum 2 characters)
+        # Support formats like:
+        # - "Plate Number: AULAKH13"
+        # - "Plate: AULAKH13"
         plate_patterns = [
             r'plate\s*(?:number|#|num)?\s*[:\-]?\s*([a-z0-9]{2,}(?:[\-]?[a-z0-9]+)*)',
             r'plate\s*[:]\s*([a-z0-9]{2,}(?:[\-]?[a-z0-9]+)*)',
@@ -187,12 +195,32 @@ class EmailReader:
                 break
         
         # Try to extract email (look for explicit email field first)
-        email_field_match = re.search(r'email\s*[:\-]?\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})', full_text, re.IGNORECASE)
-        if email_field_match:
-            email_address = email_field_match.group(1).strip()
-        else:
-            # Use sender email as default
-            email_address = recipient_email
+        # Support multiple formats:
+        # - "Email: user@example.com"
+        # - "Email Address: user@example.com"
+        # - "Email Address (for toll bill notifications): user@example.com"
+        email_patterns = [
+            r'email\s*address\s*\([^)]+\)\s*[:\-]?\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})',  # "Email Address (for toll bill notifications): ..."
+            r'email\s*address\s*[:\-]?\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})',  # "Email Address: ..."
+            r'email\s*[:\-]?\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})',  # "Email: ..."
+        ]
+        
+        email_address = None
+        for pattern in email_patterns:
+            email_field_match = re.search(pattern, full_text, re.IGNORECASE)
+            if email_field_match:
+                email_address = email_field_match.group(1).strip().lower()
+                break
+        
+        # If no email found, don't default to sender email - this causes all accounts to get the monitoring email
+        # Only use sender email if it's NOT the monitoring email (myezpassdata@gmail.com)
+        # This way accounts without explicit email won't get incorrectly merged
+        if not email_address:
+            if recipient_email and 'myezpassdata@gmail.com' not in recipient_email.lower():
+                email_address = recipient_email.lower()
+            else:
+                # No email provided - leave as None to prevent incorrect merging
+                email_address = None
         
         # If we found account/violation and plate, return the data
         # But validate they're not too short (likely false matches)
@@ -369,18 +397,6 @@ class EmailReader:
             
             return emails
         
-        except (ConnectionError, OSError, imaplib.IMAP4.error) as e:
-            error_msg = str(e)
-            print(f"❌ Error fetching emails: {error_msg}")
-            # If connection is broken, reset it so it will reconnect on next call
-            if 'Broken pipe' in error_msg or 'Connection' in error_msg or 'socket' in error_msg.lower():
-                print("   🔄 Connection lost, will reconnect on next check...")
-                try:
-                    self.connection.close()
-                except:
-                    pass
-                self.connection = None
-            return []
         except Exception as e:
             print(f"❌ Error fetching emails: {str(e)}")
             return []
