@@ -34,3 +34,16 @@ Thumbs.db
 .env
 .env.local
 
+# Logs
+*.log
+logs/*.log
+launchd_*.log
+
+# Backups
+backup_*/
+
+# Python cache
+*.pyc
+*.pyo
+__pycache__/
+
